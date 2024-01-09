@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PacMan Clone (v b0.75)</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <script src="./js/script.js"></script>
+    <script src="./js/audio.js"></script>
+  </head>
+  <body onload="init()">
+    <div class="content" preload="auto">
+      <h2 id="score"></h2>
+      <canvas id="gCanvas" width="632" height="500" style="position: absolute;border: thin solid #666666;padding: 10px;"></canvas>
+      <span style="position: absolute;top: 550px;padding-left: 20px"><img id="mute" onclick="mute()" src="./images/Volume.png" width="20px" style="vertical-align: middle;cursor: pointer;"><input id="volume" class="volumeSlider" type="range" max="100" value="60" oninput="volume(this.value/100)" style="margin-left: 8px;vertical-align: middle;"></span>
+      <div id="output" style="position: absolute;top: 580px;">
+      <h2>Tested in Chrome and Safari (desktop)<br />Arrows or 'wasd' to move, spacebar to pause</h2>
+      <br />
+      <br />
+      <br />
+      
+      <hr>
+      <br />
+      <h2>Future plans(no order):</h2>
+      <ul>
+        <li>Cleanup assets (img & audio)</li>
+        <li>Eating power pellet makes ghosts vulnerable</li>
+        <ul>
+          <li>New sound for power pellet AND during invincibility</li>
+          <li>Timer for invincibility</li>
+          <li>Eating ghost sends it back to center (through walls)</li>
+          <li>Ghosts run away from Pacman (???)</li>
+        </ul>
+        <br />
+        <li>Options</li>
+          <ul>
+            <li>Individual Sounds (siren in background)</li>
+          </ul>
+        <br />
+        <li>Ghost "AI" to chase Pacman a little</li>
+        <li>Cherries, etc...</li>
+        <li>Winning starts new level</li>
+        <li>Ghost center one-way door  (low priority)</li>
+      </ul>
+    
+        <!--
+        <p id="debug"></p>
+        
+          <h1>Temporary canvases</h1>
+        <p>
+          <div id="extra"></div>
+        </p>
+        -->
+      </div>
+    </div>
+    
+    
+    
+  </body>
+</html>
